@@ -1,6 +1,7 @@
 //prettier-ignore
 import { SpaceGroteskLight, SpaceGroteskRegular, SpaceGroteskMedium, SpaceGroteskSemiBold, SpaceGroteskBold, InterThin, InterExtraLight, InterLight, InterRegular, InterMedium, InterSemiBold, InterBold, InterExtraBold, InterBlack } from "@/lib/fonts";
 import { DOMAIN_BASE_URL, DOMAIN_IMAGES } from "@/lib/constants";
+import NavbarExport from "@/components/NavbarExport";
 import "./globals.css";
 
 import type { Metadata, Viewport } from "next";
@@ -195,6 +196,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 				suppressHydrationWarning
 				className={`bg-[#0D0D0D] ${SpaceGroteskBold.className} ${SpaceGroteskLight.className} ${SpaceGroteskRegular.className} ${SpaceGroteskMedium.className} ${SpaceGroteskSemiBold.className} ${InterThin.className} ${InterExtraLight.className} ${InterLight.className} ${InterRegular.className} ${InterMedium.className} ${InterSemiBold.className} ${InterBold.className} ${InterExtraBold.className} ${InterBlack.className} antialiased`}
 			>
+				<NavbarExport />
+
 				<main>{children}</main>
 			</body>
 		</html>

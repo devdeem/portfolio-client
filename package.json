@@ -1,6 +1,6 @@
 {
 	"private": true,
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"name": "portfolio-client",
 	"description": "My personal portfolio website build with Next.js",
 	"scripts": {
@@ -16,6 +16,7 @@
 		"class-variance-authority": "^0.7.1",
 		"clsx": "^2.1.1",
 		"lucide-react": "^0.555.0",
+		"motion": "^12.23.25",
 		"next": "^16.0.6",
 		"react": "^19.2.0",
 		"react-dom": "^19.2.0",
