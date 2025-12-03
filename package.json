@@ -1,6 +1,6 @@
 {
 	"private": true,
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"name": "portfolio-client",
 	"description": "My personal portfolio website build with Next.js",
 	"scripts": {
