@@ -1,0 +1,36 @@
+{
+	"private": true,
+	"version": "0.0.1",
+	"name": "portfolio-client",
+	"scripts": {
+		"dev": "next dev --turbopack -p 3000",
+		"build": "next build --turbopack",
+		"start": "next start -p 8526",
+		"lint": "eslint",
+		"format": "prettier --write \"**/*.{ts,tsx,md}\"",
+		"format:write": "prettier --write \"**/*.{ts,tsx,mdx}\" --cache",
+		"format:check": "prettier --check \"**/*.{ts,tsx,mdx}\" --cache"
+	},
+	"dependencies": {
+		"next": "^16.1.1",
+		"react": "^19.2.3",
+		"react-dom": "^19.2.3"
+	},
+	"devDependencies": {
+		"@tailwindcss/postcss": "^4.1.18",
+		"@types/node": "^20.19.27",
+		"@types/react": "^19.2.7",
+		"@types/react-dom": "^19.2.3",
+		"babel-plugin-react-compiler": "^1.0.0",
+		"eslint": "^9.39.2",
+		"eslint-config-next": "^16.1.1",
+		"prettier": "^3.7.4",
+		"prettier-plugin-tailwindcss": "^0.7.2",
+		"tailwindcss": "^4.1.18",
+		"typescript": "^5.9.3"
+	},
+	"author": {
+		"name": "Alexandr Virgovič",
+		"email": "contact@deemdev.com"
+	}
+}
