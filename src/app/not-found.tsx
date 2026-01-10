@@ -1,15 +1,58 @@
-"use client";
+import NotFoundExport from "@/components/layout/NotFoundExport";
+import { DOMAIN_BASE_URL } from "@/utils/constants";
+import { siteConfig } from "@/utils/siteConfig";
 
-import { OutfitRegular, OutfitSemiBold } from "@/utils/fonts";
+import type { Metadata, Viewport } from "next";
+
+export const metadata: Metadata = {
+	applicationName: siteConfig.applicationName,
+	title: "Alexandr Virgovič ~ Requested page was not found",
+	description: "The page you are looking for does not exist, or has been moved. Please check the requested URL and try again.",
+	generator: "Next.js",
+	twitter: {
+		card: "summary",
+		title: "Alexandr Virgovič ~ Requested page was not found",
+		description: "The page you are looking for does not exist, or has been moved. Please check the requested URL and try again.",
+		images: `${DOMAIN_BASE_URL}/Logo-White-Metadata.png`,
+	},
+	appleWebApp: {
+		title: "Alexandr Virgovič ~ Requested page was not found",
+		statusBarStyle: "black-translucent",
+	},
+	openGraph: {
+		siteName: siteConfig.applicationName,
+		title: "Alexandr Virgovič ~ Requested page was not found",
+		description: "The page you are looking for does not exist, or has been moved. Please check the requested URL and try again.",
+		type: "website",
+		locale: "en",
+		images: [
+			{
+				url: `${DOMAIN_BASE_URL}/Logo-White-Metadata.png`,
+				width: 512,
+				height: 512,
+				alt: "AV",
+				type: "image/png",
+			},
+		],
+	},
+	publisher: "Alexandr Virgovič",
+	category: "Portfolio",
+	authors: [
+		{
+			name: "Alexandr Virgovič",
+			url: "https://www.deemdev.com",
+		},
+	],
+	creator: "Alexandr Virgovič",
+};
+
+export const viewport: Viewport = {
+	initialScale: 1,
+	minimumScale: 1,
+	width: "device-width",
+	themeColor: "#fafafa",
+};
 
 export default function NotFound() {
-	return (
-		<div className="mx-auto flex min-h-screen w-full max-w-7xl flex-col items-center justify-center overflow-hidden px-4 2xl:px-0">
-			<h2 className={`text-center text-6xl uppercase ${OutfitSemiBold.className} text-[#fafafa]`}>Page Not Found</h2>
-
-			<p className={`mt-6 max-w-md text-base text-[#fafafa]/70 ${OutfitRegular.className}`}>
-				The page you are looking for does not exist or has been moved.
-			</p>
-		</div>
-	);
+	return <NotFoundExport />;
 }
