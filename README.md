@@ -49,13 +49,3 @@ To start the production server:
 ```bash
 npm run start
 ```
-
-## 📂 Project Structure
-
-```
-src/
-├── app/              # App Router pages and layouts
-├── components/       # Reusable UI components (Header, About, Projects, etc.)
-├── styles/           # Global styles
-└── utils/            # Constants, fonts, and helper functions
-```
