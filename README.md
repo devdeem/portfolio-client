@@ -1,6 +1,6 @@
 # Portfolio Website
 
-A modern, minimalist portfolio website built with **Next.js**, **React**, **TypeScript**, and **TailwindCSS**.
+A modern, minimalist portfolio website built with **Next.js**, **TypeScript**, and **TailwindCSS**.
 
 ## Getting Started
 
